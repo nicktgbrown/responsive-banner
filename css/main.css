@@ -1,12 +1,46 @@
 html {
-  font-family: Georgia;
   color: #fff;
   background-color: #495562;
   background-image: url("../images/earth-horizon.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  font-family: Georgia, serif;
 }
 
-a {
+.btn {
   border: 3px solid #97a49b;
   border-radius: 3px;
-  background-color: #495562;
+  background-color: transparent;
+  font-family: Georgia;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    max-height: 500px;
+    background-image: linear-gradient(to bottom, transparent, rgba(73, 85, 98, .4)), url("../images/earth-horizon.jpg");
+    padding-top: 315px;
+    padding-bottom: 20px;
+  }
+
+  .btn {
+    border: 3px solid #efefef;
+    border-radius: 3px;
+    background-color: transparent;
+    font-family: Georgia, serif;
+    color: #fff;
+    text-decoration: none;
+    padding-left: .1px;
+  }
+
+  h1 {
+    padding-bottom: 1px;
+  }
+
+  .text {
+    margin-left: 2.6em;
+  }
+
 }
